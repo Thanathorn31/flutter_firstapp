@@ -1,0 +1,51 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# VSCode (optional)
+#.vscode/
+
+# Flutter / Dart / Pub
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+
+# >>> IMPORTANT <<<  
+# Ignore ALL build folders
+/build/
+**/build/
+android/**/build/
+ios/**/build/
+
+# Code coverage
+/coverage/
+
+# Symbolication
+app.*.symbols
+
+# Obfuscation
+app.*.map.json
+
+# Android specific build folders
+/android/app/debug
+/android/app/profile
+/android/app/release
