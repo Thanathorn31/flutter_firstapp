@@ -18,56 +18,58 @@ class _CalculatePageState extends State<CalculatePage> {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: [
-        Center(
-          child: Column(
-            children: [
-              Text(
-                "Calculate Change",
-                style: TextStyle(
-                  fontFamily: "maa",
-                  fontSize: 48,
-                  fontWeight: FontWeight.w700,
-                  fontStyle: FontStyle.italic,
-                  color: Colors.blue,
-                  backgroundColor: Colors.greenAccent,
+    return Scaffold(
+      body: ListView(
+        children: [
+          Center(
+            child: Column(
+              children: [
+                Text(
+                  "Calculate Change",
+                  style: TextStyle(
+                    fontFamily: "maa",
+                    fontSize: 48,
+                    fontWeight: FontWeight.w700,
+                    fontStyle: FontStyle.italic,
+                    color: Colors.blue,
+                    backgroundColor: Colors.greenAccent,
+                  ),
                 ),
-              ),
 
-              Image.asset("assets/burger.png", height: 100),
+                Image.asset("assets/burger.png", height: 100),
 
-              SizedBox(height: 20),
+                SizedBox(height: 20),
 
-              Image.network(
-                "https://d11a6trkgmumsb.cloudfront.net/original/3X/6/5/65137061474887dfa0f183f2bc118a3e52fc353e.gif",
-                height: 60,
-              ),
+                Image.network(
+                  "https://d11a6trkgmumsb.cloudfront.net/original/3X/6/5/65137061474887dfa0f183f2bc118a3e52fc353e.gif",
+                  height: 60,
+                ),
 
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: priceTextField(),
-              ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: priceTextField(),
+                ),
 
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: amountTextField(),
-              ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: amountTextField(),
+                ),
 
-              calculateButton(),
-              showTotalText(),
+                calculateButton(),
+                showTotalText(),
 
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: receiveMoneyTextField(),
-              ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: receiveMoneyTextField(),
+                ),
 
-              changeCalculateBotton(),
-              showChangeText(),
-            ],
+                changeCalculateBotton(),
+                showChangeText(),
+              ],
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 
