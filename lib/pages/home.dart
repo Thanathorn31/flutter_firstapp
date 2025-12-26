@@ -1,4 +1,6 @@
 // stf
+import 'dart:convert';
+
 import 'package:firstapp/pages/detail.dart';
 import 'package:flutter/material.dart';
 
@@ -14,34 +16,29 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(24.0),
-      child: ListView(
-        children: [
-          MyBox(
-            "What is a computer?",
-            "A computer is a machine that can be programmed to automatically.",
-            "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExemZxem9sd2R5ZTBrd2w0N2c3b3ptcmc3ZWY0cnNpNHkybnZwOWt3aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iLqpYAbKGOrqU/giphy.gif",
-          ),
-          SizedBox(height: 20),
-          MyBox(
-            "What is a Flutter? ?",
-            "An open-source UI framework by Google.",
-            "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzJ1ZDM1NHluajZ2eGh4NmxzMWhrb2lzMzZ6YTZidmQ4bXl5cXBjNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gZEBpuOkPuydi/giphy.gif",
-          ),
-          SizedBox(height: 20),
-          MyBox(
-            "What is a dart?",
-            "A a language that tells computers what to do, step by step.)",
-            "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzJ5YW5leHdjOWJ3ZDR0NGp5ZWloNTd2cHh4eG9jMmdhOTBydDhteSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/14bE3hB1gBejxm/giphy.gif",
-          ),
-          SizedBox(height: 20),
-        ],
+      child: FutureBuilder(
+        builder: (context, snapshot) {
+          var data = json.decode(snapshot.data.toString());
+          return ListView.builder(
+            itemBuilder: (BuildContext context, int index) {
+              return MyBox(
+                data[index]['title'],
+                data[index]['subtitle'],
+                data[index]['image_url'],
+              );
+            },
+            itemCount: data.length,
+          );
+        },
+        future: DefaultAssetBundle.of(context).loadString('assets/data.json'),
       ),
     );
   }
 
   Widget MyBox(String title, String subtitle, String img_url) {
     return Container(
-      padding: EdgeInsets.all(24),
+      margin: EdgeInsets.only(top: 20),
+      padding: EdgeInsets.all(20),
       height: 150,
       decoration: BoxDecoration(
         color: const Color.fromARGB(255, 195, 210, 210),

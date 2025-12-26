@@ -1,0 +1,19 @@
+[
+    {
+        "title":"What is a computer?",
+        "subtitle":"A computer is a machine that can be programmed to automatically.",
+        "image_url":"https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExemZxem9sd2R5ZTBrd2w0N2c3b3ptcmc3ZWY0cnNpNHkybnZwOWt3aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iLqpYAbKGOrqU/giphy.gif"
+    },
+
+    {
+        "title":"What is a Flutter?",
+        "subtitle":"A computer is a machine that can be programmed to automatically.",
+        "image_url":"https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzJ1ZDM1NHluajZ2eGh4NmxzMWhrb2lzMzZ6YTZidmQ4bXl5cXBjNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gZEBpuOkPuydi/giphy.gif"
+    },
+
+    {
+        "title":"What is a dart?",
+        "subtitle":"A a language that tells computers what to do, step by step.)",
+        "image_url":"https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzJ5YW5leHdjOWJ3ZDR0NGp5ZWloNTd2cHh4eG9jMmdhOTBydDhteSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/14bE3hB1gBejxm/giphy.gif"
+    }
+]
