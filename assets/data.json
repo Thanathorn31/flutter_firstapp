@@ -1,19 +1,20 @@
 [
-    {
-        "title":"What is a computer?",
-        "subtitle":"A computer is a machine that can be programmed to automatically.",
-        "image_url":"https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExemZxem9sd2R5ZTBrd2w0N2c3b3ptcmc3ZWY0cnNpNHkybnZwOWt3aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iLqpYAbKGOrqU/giphy.gif"
-    },
-
-    {
-        "title":"What is a Flutter?",
-        "subtitle":"A computer is a machine that can be programmed to automatically.",
-        "image_url":"https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzJ1ZDM1NHluajZ2eGh4NmxzMWhrb2lzMzZ6YTZidmQ4bXl5cXBjNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gZEBpuOkPuydi/giphy.gif"
-    },
-
-    {
-        "title":"What is a dart?",
-        "subtitle":"A a language that tells computers what to do, step by step.)",
-        "image_url":"https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzJ5YW5leHdjOWJ3ZDR0NGp5ZWloNTd2cHh4eG9jMmdhOTBydDhteSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/14bE3hB1gBejxm/giphy.gif"
-    }
+  {
+    "title": "What is a computer?",
+    "subtitle": "A computer is a machine that can be programmed to automatically.",
+    "image_url": "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExemZxem9sd2R5ZTBrd2w0N2c3b3ptcmc3ZWY0cnNpNHkybnZwOWt3aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iLqpYAbKGOrqU/giphy.gif",
+    "detail": "A computer is an electronic device that processes data and performs tasks according to a set of instructions called programs. Computers are used in many areas such as education, business, communication, and entertainment. Examples of computers include desktops, laptops, tablets, and smartphones."
+  },
+  {
+    "title": "What is Flutter?",
+    "subtitle": "A computer is a machine that can be programmed to automatically.",
+    "image_url": "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzJ1ZDM1NHluajZ2eGh4NmxzMWhrb2lzMzZ6YTZidmQ4bXl5cXBjNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gZEBpuOkPuydi/giphy.gif",
+    "detail": "Flutter is an open-source UI framework created by Google. It is used to build beautiful and fast applications for mobile, web, and desktop from a single codebase. Flutter uses the Dart programming language and provides many ready-to-use widgets."
+  },
+  {
+    "title": "What is Dart?",
+    "subtitle": "A language that tells computers what to do, step by step.",
+    "image_url": "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzJ5YW5leHdjOWJ3ZDR0NGp5ZWloNTd2cHh4eG9jMmdhOTBydDhteSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/14bE3hB1gBejxm/giphy.gif",
+    "detail": "Dart is a programming language developed by Google. It is mainly used with Flutter to build mobile and web applications. Dart is easy to learn, supports object-oriented programming, and helps developers write clean and efficient code."
+  }
 ]
